@@ -1,3 +1,4 @@
+// KADANES ALGORITHM (OPTIMAL SOLUTION)
 class Solution {
     public int maxSubArray(int[] nums) {
         int Currentsum = nums[0];
