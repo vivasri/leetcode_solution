@@ -1,0 +1,32 @@
+class Solution {
+    public static void trans(int[]nums){
+        for(int i=0; i<nums.length;i++){
+            System.out.print(nums[i]);
+        }
+    }
+    public static void swap(int[] nums, int x, int y){
+        int temp = nums[x];
+        nums[x]= nums[y];
+        nums[y]= temp;
+    }
+    public static int linear(int[] nums , int target){
+        for(int i=0;i<nums.length;i++){
+            if(target == nums[i]){
+                return i;
+            }
+            if(nums[i]> target){
+                return i;
+            }
+        }
+        return nums.length;
+      
+    }
+    public int searchInsert(int[] nums, int target) {
+     
+      int index = linear(nums,target);
+      System.out.print(index);
+       trans(nums);
+       return index;
+    }
+
+}
